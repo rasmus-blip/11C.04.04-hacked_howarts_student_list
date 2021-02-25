@@ -241,6 +241,7 @@ main {
 }
 
 #buttons {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -249,7 +250,7 @@ main {
     justify-content: center;
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .crest {

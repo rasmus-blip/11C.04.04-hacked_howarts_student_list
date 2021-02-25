@@ -300,7 +300,7 @@ function sorter() {
     console.log("virker?");
     sorted.sort(sortFirstName);
   } else if (sorter === "filterLastNameAtoZ") sorted.sort(sortLastName);
-  buildList(sorted);
+  buildList();
 }
 
 //sort by first name
