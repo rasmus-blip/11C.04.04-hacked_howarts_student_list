@@ -1,0 +1,316 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* fonts  */
+
+@font-face {
+    font-family: 'harry_pregular';
+    src: url('/webfontkit-20210212-082146/harryp__.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 { 
+    font-family: 'harry_pregular';
+    font-size: 6rem;
+    margin-top: 5vw;
+}
+h2 { 
+    font-family: 'harry_pregular';
+    font-size: 4rem;
+    margin-top: 5vw;
+    text-align: center;
+}
+
+
+
+
+/* header */
+
+#top_top {
+    display: flex;
+    justify-content: center;
+}
+
+#top {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    width: 60vw;
+}
+
+#top img {
+    align-self: center;
+    width: 50vw;
+}
+
+
+
+
+
+/* sorting, filters or search */
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+#sort {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    height: 20px;
+    margin: 20px;
+    background-color: black;
+    color: white;
+}
+button:active {
+    background-color: white;
+    color: black;
+}
+button:hover {
+    cursor: pointer;
+}
+input {
+    height: 20px;
+    margin: 20px;
+}
+
+
+
+
+template {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#expell_button {
+    background-color: red;
+}
+
+
+select {
+    height: 20px;
+    margin: 20px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+.popup_content {
+    display: flex;
+    flex-direction: row;
+}
+
+.popup_content p {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.popup_content img {
+    max-height: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+.pop {
+    width: 100vw;
+    height: 100vw;
+    position:fixed; 
+}
+
+.popstyle {
+    width: 100vw;
+    height: 45vw;
+    display: flex;
+    justify-content: center; 
+    margin: auto 0; 
+}
+
+.popup {
+    margin-top: 10px;
+    z-index: 2;
+}
+
+#close_popup {
+    margin: 20px; 
+    font-size: 3rem;
+    font-weight: bold;
+    color: white; 
+    
+}
+
+#close_popup:hover {
+    cursor: pointer; 
+}
+
+main li {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+list-style: none;
+}
+
+li:hover {
+    cursor: pointer; 
+}
+
+li p {
+    margin-left: 10px;
+    margin-top: 5px;
+    text-align: left;
+}
+.house_p {
+    text-align: right;
+}
+
+.pop_portrait {
+    border-radius: 50%;
+    border: solid 10px; 
+}
+
+#line {
+    width: 100%;
+    height: 0.3vw;
+    background-color: black;
+}
+
+
+template#student {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+
+main {
+    height: 100vh;
+}
+
+
+
+/* ny popup */
+
+#popup {
+    height: 55vw;
+}
+
+.popupstyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#student_details p {
+    margin: 5px;
+    margin-top: 20px;
+}
+
+#image {
+    margin: 40px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#icons{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.crest {
+    width: 50px;
+}
+
+#prefecticon {
+    width: 50px;
+    background-image: url(images/prefect.png);
+    background-size: cover;
+}
+
+
+/* dialog */
+
+.dialog {
+    display: none;
+  }
+  
+  .dialog.show {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.4);
+  }
+  
+  .dialogcontent {
+    background-color: rgb(233, 233, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10vw 8vw 8vw 8vw;
+    position: relative;
+  }
+  
+  .dialog h1 {
+    margin: 0;
+    font-size: 130%;
+  }
+  
+  .dialog h2 {
+    margin: .5em 0;
+    font-size: 110%;
+    font-weight: lighter;
+  }
+  
+  .dialog .closebutton_dialog {
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    top: 4vw;
+    right: 4vw;
+    border: none;
+    background-color: transparent;
+    font-size: 90%;
+    color: darkgray;
+  }
+  
+  .dialog .closebutton:hover {
+    color: black;
+  }
