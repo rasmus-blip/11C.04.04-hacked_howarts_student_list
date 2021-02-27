@@ -13,12 +13,13 @@
       <div id="top_top">
         <div id="top">
           <h1>Hogwarts student list</h1>
-          <img src="images/dobby.png" alt="" />
+          <img src="images/dobby.png" alt="" id="dobby" />
           <h1>anno 1991</h1>
         </div>
       </div>
       <h2>Filter by</h2>
       <nav>
+        <h3 id="amount"></h3>
         <select id="houses">
           <option value="all">All</option>
           <option value="gryffindor" data-action="filter" data-filter="gryffindor">Gryffindor</option>
@@ -31,7 +32,7 @@
           <button id="filterFirstNameAtoZ" class="filterbutton" data-action="sort" data-filter="filterFirstNameAtoZ">Firstname A-Z</button>
 
           <button id="filterLastNameAtoZ" class="filterbutton" data-action="sort" data-filter="filterLastNameAtoZ">Lastname A-Z</button>
-          <input type="text" placeholder="Search" id="search" />
+          <input type="text" placeholder="Search the list" id="search" />
         </div>
       </nav>
 
@@ -55,6 +56,7 @@
           <div id="icons">
             <img src="" alt="" class="crest" />
             <img src="images/prefect.png" alt="" class="hidden" id="prefecticon" />
+            <img src="images/umbridge2.gif" class="hidden" id="umbridge" alt="" />
           </div>
           <button id="prefect_button">Make student prefect</button>
           <button id="inqSquad_button">Add to Inquisitional Squad</button>
@@ -67,25 +69,23 @@
       <div id="prefectConflict" class="dialog">
         <div class="dialogcontent">
           <button class="closebutton_dialog">close</button>
-          <h1>You can onle have one prefect of each gender from each house</h1>
-          <h2>Remove this one</h2>
-          <p><button data-action="remove">remove</button> <span class="student">NAME, the TYPE</span></p>
+          <h1>You can onle have one prefect of each gender from each house!</h1>
+          <h2>Remove this student if you want to continue</h2>
+          <p><button data-action="remove" id="remove_student">Remove</button> <span class="student">NAME, the TYPE</span></p>
         </div>
       </div>
 
       <!-- dialogs -->
 
-      <main>
-        <li>Lastname</li>
-        <li>Firstname</li>
-        <li>House</li>
-      </main>
+      <main></main>
 
       <template id="student">
         <li>
           <p data-field="firstname"></p>
           <p data-field="lastname"></p>
-          <b><p data-field="house"></p></b>
+          <i
+            ><b><p data-field="house"></p></b
+          ></i>
           <!-- <img src="" alt="" /> -->
         </li>
         <div id="line"></div>

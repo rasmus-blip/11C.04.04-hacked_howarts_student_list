@@ -33,6 +33,12 @@ h2 {
     margin-top: 5vw;
     text-align: center;
 }
+h3 { 
+    font-family: 'harry_pregular';
+    font-size: 4rem;
+    margin-top: 5vw;
+    text-align: center;
+}
 
 
 
@@ -56,6 +62,26 @@ h2 {
     width: 50vw;
 }
 
+#dobby:hover {
+    cursor: pointer;
+    animation-name: dobbyrotate;
+    animation-iteration-count: infinite;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+}
+
+@keyframes dobbyrotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
 
 
 
@@ -75,10 +101,12 @@ nav {
 
 button {
     height: 20px;
+    width: 100%;
     margin: 20px;
     background-color: black;
     color: white;
 }
+
 button:active {
     background-color: white;
     color: black;
@@ -87,9 +115,17 @@ button:hover {
     cursor: pointer;
 }
 input {
+    width: 400px;
     height: 20px;
     margin: 20px;
 }
+
+#search {
+    width: 400px;
+    height: 20px;
+    margin: 20px;
+}
+
 
 
 
@@ -142,7 +178,7 @@ select {
 
 .popstyle {
     width: 100vw;
-    height: 45vw;
+    height: 30vw;
     display: flex;
     justify-content: center; 
     margin: auto 0; 
@@ -220,7 +256,7 @@ main {
 /* ny popup */
 
 #popup {
-    height: 55vw;
+    height: 30vw;
 }
 
 .popupstyle {
@@ -236,6 +272,8 @@ main {
 
 #image {
     margin: 40px;
+    border-radius: 50%;
+    border: solid 5px black; 
     max-width: 200px;
     max-height: 200px;
 }
@@ -263,6 +301,13 @@ main {
     background-size: cover;
 }
 
+#umbridge {
+    width: 50px;
+    background-image: url(images/umbridge2.gif);
+    border-radius: 50%;
+    background-size: cover;
+}
+
 
 /* dialog */
 
@@ -287,17 +332,19 @@ main {
     font-family: Arial, Helvetica, sans-serif;
     padding: 10vw 8vw 8vw 8vw;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   .dialog h1 {
     margin: 0;
-    font-size: 130%;
+    font-size: 3rem;
   }
   
   .dialog h2 {
     margin: .5em 0;
-    font-size: 110%;
-    font-weight: lighter;
+    font-size: 2rem;
   }
   
   .dialog .closebutton_dialog {
@@ -309,7 +356,20 @@ main {
     border: none;
     background-color: transparent;
     font-size: 90%;
-    color: darkgray;
+    color: black; 
+  }
+
+  .dialog .student {
+      font-size: 2rem;
+  }
+
+  #remove_student {
+    font-size: 2rem;
+    height: 3rem;
+    margin: 3rem;
+    
+    background-color: black;
+    color: white;
   }
   
   .dialog .closebutton:hover {
